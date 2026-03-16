@@ -87,8 +87,8 @@ Capstone Project/
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/student-dropout-prediction.git
-cd student-dropout-prediction
+git clone https://github.com/pixel-user-512/student-dropout-prediction-system.git
+cd student-dropout-prediction-system
 
 # Create and activate a virtual environment
 python -m venv venv
@@ -172,11 +172,11 @@ jupyter notebook "notebook/Student Dropout Risk Prediction Using ML.ipynb"
 
 | Model | Accuracy | Precision | Recall | F1-Score | ROC-AUC |
 |---|---|---|---|---|---|
-| Logistic Regression | 0.873 | 0.858 | 0.725 | 0.786 | — |
-| Decision Tree | — | — | — | — | — |
-| Random Forest | High | High | High | High | High |
-| SVM | — | — | — | — | — |
-| **XGBoost** ✅ | **Best** | **Best** | **Best** | **Best** | **Best** |
+| Logistic Regression | 0.873 | 0.858 | 0.725 | 0.786 | 0.920 |
+| Decision Tree | 0.805 | 0.687 | 0.718 | 0.702 | 0.782 |
+| Random Forest | 0.879 | 0.867 | 0.736 | 0.796 | 0.924 |
+| SVM | 0.871 | 0.890 | 0.683 | 0.773 | 0.917 |
+| **XGBoost** ✅ | 0.882 | 0.866 | 0.750 | 0.804 | 0.923 |
 
 > **XGBoost was selected as the final deployed model** due to its superior F1-score, making it the most reliable at identifying both dropout and non-dropout students. Ensemble methods (XGBoost and Random Forest) outperformed linear models on this dataset.
 
